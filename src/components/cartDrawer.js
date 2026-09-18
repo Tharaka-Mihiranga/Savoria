@@ -60,7 +60,11 @@ export function renderCartDrawer() {
               </div>
               <p class="font-serif text-lg font-bold text-stone-800">Your Order is Empty</p>
               <p class="text-xs text-stone-500 max-w-xs mx-auto">
+<<<<<<< HEAD
                 Discover Chef Antoine's signature creations and add them to your fine dining experience.
+=======
+                Discover Chef Silva's signature creations and add them to your fine dining experience.
+>>>>>>> 1dbc971 (Initial commit)
               </p>
             </div>
           ` : `
@@ -154,7 +158,11 @@ export function renderCartDrawer() {
                 <span>$${tax.toFixed(2)}</span>
               </div>
               <div class="flex justify-between">
+<<<<<<< HEAD
                 <span>White-Glove Delivery:</span>
+=======
+                <span>Fast Delivery:</span>
+>>>>>>> 1dbc971 (Initial commit)
                 <span class="${deliveryFee === 0 ? 'text-emerald-700 font-semibold' : ''}">
                   ${deliveryFee === 0 ? 'FREE' : `$${deliveryFee.toFixed(2)}`}
                 </span>

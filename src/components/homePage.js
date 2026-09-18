@@ -24,6 +24,7 @@ export function renderHomePage() {
         <div class="relative z-10 max-w-4xl mx-auto text-center py-20 space-y-8">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold tracking-widest uppercase animate-fade-in">
             ${icon('sparkles', 'w-3.5 h-3.5')}
+<<<<<<< HEAD
             <span>Gastronomic Sanctuary • Est. 2012</span>
           </div>
 
@@ -33,6 +34,17 @@ export function renderHomePage() {
 
           <p class="text-base sm:text-xl text-stone-300 max-w-2xl mx-auto font-light leading-relaxed">
             Curated by Executive Chef Antoine Laurent in the heart of Metropolis. Honoring heirloom agriculture, Michelin precision, and timeless culinary romance.
+=======
+            <span>Food Sanctuary • Est. 2012</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-stone-100 leading-[1.15]">
+            Where Classical Heritage Meets <span class="italic text-amber-200 font-normal">Modern Food</span>
+          </h1>
+
+          <p class="text-base sm:text-xl text-stone-300 max-w-2xl mx-auto font-light leading-relaxed">
+            Curated by Executive Chef Silva in the heart of Srilanka. Honoring heirloom agriculture, Michelin precision, and timeless culinary romance.
+>>>>>>> 1dbc971 (Initial commit)
           </p>
 
           <!-- Call to Action Buttons -->
@@ -52,7 +64,11 @@ export function renderHomePage() {
               class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-stone-100 font-medium text-sm tracking-wider uppercase backdrop-blur-md border border-white/20 transition-all flex items-center justify-center gap-2"
             >
               ${icon('truck', 'w-4 h-4 text-amber-300')}
+<<<<<<< HEAD
               <span>White-Glove Services</span>
+=======
+              <span>Fast Services</span>
+>>>>>>> 1dbc971 (Initial commit)
             </a>
           </div>
 
@@ -60,12 +76,20 @@ export function renderHomePage() {
           <div class="pt-6 flex flex-wrap justify-center items-center gap-6 text-xs text-stone-400">
             <span class="flex items-center gap-2">
               ${icon('truck', 'w-4 h-4 text-amber-400')}
+<<<<<<< HEAD
               White-Glove Delivery to Your Door (30-45m)
+=======
+              Fast Delivery to Your Door (30-45m)
+>>>>>>> 1dbc971 (Initial commit)
             </span>
             <span class="hidden sm:inline text-stone-600">•</span>
             <span class="flex items-center gap-2">
               ${icon('shield-check', 'w-4 h-4 text-amber-400')}
+<<<<<<< HEAD
               100% Zero-Waste Bio-Farm Sourced
+=======
+              100% Zero-Waste Farm Sourced
+>>>>>>> 1dbc971 (Initial commit)
             </span>
           </div>
         </div>
@@ -99,9 +123,15 @@ export function renderHomePage() {
           <div>
             <div class="text-xs font-bold uppercase tracking-widest text-amber-800 flex items-center gap-2 mb-2">
               <span class="w-6 h-0.5 bg-amber-700"></span>
+<<<<<<< HEAD
               Epicurean Masterpieces
             </div>
             <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#2C2724]">Chef Antoine's Signature Plates</h2>
+=======
+              Srilankan Masterpieces
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#2C2724]">Chef Silvas's Signature Plates</h2>
+>>>>>>> 1dbc971 (Initial commit)
             <p class="text-sm text-stone-600 mt-2 max-w-xl">
               Each dish reflects seasonal micro-harvests from our valley farm, cooked with deliberate temperature mastery and presented with artistic restraint.
             </p>
@@ -303,7 +333,11 @@ export function renderHomePage() {
               Immerse Yourself in the Savoria Gastronomic Experience
             </h2>
             <p class="text-sm text-stone-300">
+<<<<<<< HEAD
               Experience culinary excellence delivered with heated white-glove thermal packaging or bespoke private chef catering for your special events.
+=======
+              Experience culinary excellence delivered with heated Fast thermal packaging or bespoke private chef catering for your special events.
+>>>>>>> 1dbc971 (Initial commit)
             </p>
           </div>
           <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto shrink-0">

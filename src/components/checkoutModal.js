@@ -25,7 +25,11 @@ function renderCheckoutForm(total, count) {
   return `
     <div class="flex justify-between items-center border-b border-stone-100 pb-4">
       <div>
+<<<<<<< HEAD
         <h3 class="font-serif text-2xl font-bold text-stone-900">White-Glove Checkout</h3>
+=======
+        <h3 class="font-serif text-2xl font-bold text-stone-900">Fast Checkout</h3>
+>>>>>>> 1dbc971 (Initial commit)
         <p class="text-xs text-stone-500">${state.deliveryType === 'delivery' ? 'Express Delivery' : 'Bistro Takeout'} • ${count} items</p>
       </div>
       <button id="close-checkout-btn" class="p-2 text-stone-400 hover:text-stone-700 rounded-lg">
@@ -77,7 +81,11 @@ function renderCheckoutForm(total, count) {
             id="co-address" 
             type="text" 
             required 
+<<<<<<< HEAD
             placeholder="e.g. Apt 4B, 742 Evergreen Terrace, Metropolis" 
+=======
+            placeholder="e.g. Apt 4B, 742 Evergreen Terrace, Srilnka" 
+>>>>>>> 1dbc971 (Initial commit)
             class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-stone-300 bg-stone-50 focus:outline-none focus:ring-2 focus:ring-amber-800"
           />
         </div>
@@ -221,7 +229,11 @@ export function initCheckoutEvents() {
       saveOrders();
       clearCart();
       orderCompletedReceipt = newOrder;
+<<<<<<< HEAD
       showToast('Order confirmed! Chef Antoine is preparing your dishes.');
+=======
+      showToast('Order confirmed! Chef Silva is preparing your dishes.');
+>>>>>>> 1dbc971 (Initial commit)
       renderApp();
     };
   }

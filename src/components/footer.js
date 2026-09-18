@@ -19,7 +19,11 @@ export function renderFooter() {
               </div>
             </div>
             <p class="text-xs text-stone-400 leading-relaxed">
+<<<<<<< HEAD
               Crafting unforgettable gastronomic memories with farm-to-table reverence, Michelin-inspired French precision, and sustainable heritage stewardship since ${RESTAURANT_INFO.foundedYear}.
+=======
+              Crafting unforgettable gastronomic memories with farm-to-table reverence, Michelin-inspired Srilanka precision, and sustainable heritage stewardship since ${RESTAURANT_INFO.foundedYear}.
+>>>>>>> 1dbc971 (Initial commit)
             </p>
             <div class="flex items-center gap-3 pt-2 text-stone-400">
               <span class="text-xs text-amber-400/90 font-medium">★★★★★ 4.9 Rating (600+ Reviews)</span>
@@ -35,8 +39,13 @@ export function renderFooter() {
             <ul class="space-y-2 text-sm text-stone-400">
               <li><a href="index.html" class="footer-nav-link hover:text-amber-300 transition-colors">Home Experience</a></li>
               <li><a href="menu.html" class="footer-nav-link hover:text-amber-300 transition-colors">Artisanal Menu & Wine</a></li>
+<<<<<<< HEAD
               <li><a href="about.html" class="footer-nav-link hover:text-amber-300 transition-colors">Chef Antoine & History</a></li>
               <li><a href="services.html" class="footer-nav-link hover:text-amber-300 transition-colors">White-Glove Delivery & Catering</a></li>
+=======
+              <li><a href="about.html" class="footer-nav-link hover:text-amber-300 transition-colors">Chef Silva & History</a></li>
+              <li><a href="services.html" class="footer-nav-link hover:text-amber-300 transition-colors">Fast Delivery & Catering</a></li>
+>>>>>>> 1dbc971 (Initial commit)
               <li><a href="contact.html" class="footer-nav-link hover:text-amber-300 transition-colors">Concierge & Inquiries</a></li>
               <li><a href="login.html" class="footer-nav-link hover:text-amber-300 transition-colors">Connoisseur Club Login</a></li>
             </ul>

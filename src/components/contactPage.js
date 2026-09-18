@@ -10,11 +10,19 @@ export function renderContactPage() {
     },
     {
       q: 'Is valet parking available upon arrival?',
+<<<<<<< HEAD
       a: 'Yes, complimentary white-glove valet parking is provided directly in front of our portico at 428 Heritage Boulevard from 5:00 PM onward every evening.'
     },
     {
       q: 'Can the kitchen accommodate severe dietary allergies?',
       a: 'Absolutely. Chef Antoine and his team craft dedicated gluten-free, dairy-free, vegetarian, and vegan variations for almost every course. Please specify your allergy in the order notes or concierge message.'
+=======
+      a: 'Yes, complimentary valet parking is provided directly in front of our portico at 428 Heritage Boulevard from 5:00 PM onward every evening.'
+    },
+    {
+      q: 'Can the kitchen accommodate severe dietary allergies?',
+      a: 'Absolutely. Chef Silva and his team craft dedicated gluten-free, dairy-free, vegetarian, and vegan variations for almost every course. Please specify your allergy in the order notes or concierge message.'
+>>>>>>> 1dbc971 (Initial commit)
     },
     {
       q: 'How far in advance can private catering and banquets be booked?',

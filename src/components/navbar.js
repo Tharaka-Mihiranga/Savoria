@@ -19,12 +19,20 @@ export function renderNavbar() {
         <div class="max-w-7xl mx-auto flex justify-between items-center">
           <div class="flex items-center gap-2">
             <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<<<<<<< HEAD
             <span>Artisanal Seasonal Dining • Free White-Glove Delivery over $75</span>
+=======
+            <span>Artisanal Seasonal Dining • Free Fast Delivery over $75</span>
+>>>>>>> 1dbc971 (Initial commit)
           </div>
           <div class="hidden md:flex items-center gap-6">
             <span class="flex items-center gap-1.5">${icon('phone', 'w-3.5 h-3.5 text-amber-400')} ${RESTAURANT_INFO.phone}</span>
             <span class="text-stone-500">|</span>
+<<<<<<< HEAD
             <span class="flex items-center gap-1.5">${icon('map-pin', 'w-3.5 h-3.5 text-amber-400')} Metropolis Historic District</span>
+=======
+            <span class="flex items-center gap-1.5">${icon('map-pin', 'w-3.5 h-3.5 text-amber-400')} Srilanka</span>
+>>>>>>> 1dbc971 (Initial commit)
           </div>
         </div>
       </div>

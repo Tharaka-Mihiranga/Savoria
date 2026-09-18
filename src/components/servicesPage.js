@@ -13,7 +13,11 @@ export function renderServicesPage() {
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-900 text-xs font-semibold uppercase tracking-widest">
           Culinary Experiences & Delivery
         </div>
+<<<<<<< HEAD
         <h1 class="font-serif text-4xl sm:text-5xl font-bold text-[#2C2724]">Services & White-Glove Delivery</h1>
+=======
+        <h1 class="font-serif text-4xl sm:text-5xl font-bold text-[#2C2724]">Services & Fast Delivery</h1>
+>>>>>>> 1dbc971 (Initial commit)
         <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
           From heated temperature-controlled delivery to bespoke in-home private dining and corporate banquets.
         </p>
@@ -24,7 +28,11 @@ export function renderServicesPage() {
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-stone-100 pb-8">
           <div>
             <span class="text-xs font-bold uppercase tracking-widest text-amber-800">Haute Cuisine At Your Table</span>
+<<<<<<< HEAD
             <h2 class="font-serif text-3xl font-bold text-[#2C2724]">White-Glove Delivery Service</h2>
+=======
+            <h2 class="font-serif text-3xl font-bold text-[#2C2724]">Fast Delivery Service</h2>
+>>>>>>> 1dbc971 (Initial commit)
             <p class="text-xs text-stone-500 mt-1">Enjoy Michelin-inspired culinary artistry from the comfort of your private residence.</p>
           </div>
           <a 
@@ -75,7 +83,11 @@ export function renderServicesPage() {
             </div>
             <h4 class="font-serif text-base font-bold text-stone-900">Plating Instructions</h4>
             <p class="text-xs text-stone-600 leading-relaxed">
+<<<<<<< HEAD
               Accompanied by Chef Antoine’s printed plating card and garnish recommendations for home presentation.
+=======
+              Accompanied by Chef silva’s printed plating card and garnish recommendations for home presentation.
+>>>>>>> 1dbc971 (Initial commit)
             </p>
           </div>
         </div>
@@ -116,7 +128,11 @@ export function renderServicesPage() {
           <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 space-y-4">
             <h3 class="font-serif text-lg font-bold text-stone-900 flex items-center gap-2">
               ${icon('map-pin', 'w-5 h-5 text-amber-800')}
+<<<<<<< HEAD
               Metropolis Delivery Radius
+=======
+              Srilnka Delivery Radius
+>>>>>>> 1dbc971 (Initial commit)
             </h3>
             <p class="text-xs text-stone-500">
               Our direct couriers serve the following prime metropolitan neighborhoods:
@@ -151,7 +167,11 @@ export function renderServicesPage() {
               </div>
               <h3 class="font-serif text-xl font-bold text-stone-900">In-Residence Private Chef</h3>
               <p class="text-xs text-stone-600 leading-relaxed">
+<<<<<<< HEAD
                 Chef Antoine or our Sous Chefs prepare a multi-course tasting menu directly inside your home kitchen, complete with fine china and sommelier pairing.
+=======
+                Chef Silva or our Sous Chefs prepare a multi-course tasting menu directly inside your home kitchen, complete with fine china and sommelier pairing.
+>>>>>>> 1dbc971 (Initial commit)
               </p>
               <div class="text-xs font-semibold text-amber-900">Starting at $180 / guest</div>
             </div>

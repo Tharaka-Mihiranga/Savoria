@@ -15,7 +15,11 @@ export function renderAboutPage() {
         </div>
         <h1 class="font-serif text-4xl sm:text-5xl font-bold text-[#2C2724]">Our Story & The Kitchen Hearth</h1>
         <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+<<<<<<< HEAD
           Founded in ${RESTAURANT_INFO.foundedYear} on the principle that true luxury is found in hyper-seasonal provenance, patient craft, and honest French soul.
+=======
+          Founded in ${RESTAURANT_INFO.foundedYear} on the principle that true luxury is found in hyper-seasonal provenance, patient craft, and honest Srilankan soul.
+>>>>>>> 1dbc971 (Initial commit)
         </p>
       </div>
 
@@ -44,7 +48,11 @@ export function renderAboutPage() {
             <div>
               <span class="text-xs font-bold uppercase tracking-widest text-amber-800">Master of the Hearth</span>
               <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#2C2724] mt-1">${headChef.name}</h2>
+<<<<<<< HEAD
               <p class="text-xs text-stone-500 mt-1">${headChef.experience} in French Haute Cuisine</p>
+=======
+              <p class="text-xs text-stone-500 mt-1">${headChef.experience} in Srilanka Cuisine</p>
+>>>>>>> 1dbc971 (Initial commit)
             </div>
 
             <blockquote class="border-l-4 border-amber-800 pl-4 py-2 italic font-serif text-base sm:text-lg text-stone-800 leading-relaxed bg-stone-50/70 rounded-r-xl">
@@ -56,7 +64,11 @@ export function renderAboutPage() {
             </p>
 
             <p class="text-sm text-stone-600 leading-relaxed">
+<<<<<<< HEAD
               Chef Antoine’s culinary creed avoids unneeded theatrics. Every reduction, emulsion, and ember-roasted cut is designed to reveal the pure resonance of ingredients cultivated within hours of harvest at our valley farmstead.
+=======
+              Chef Silva’s culinary creed avoids unneeded theatrics. Every reduction, emulsion, and ember-roasted cut is designed to reveal the pure resonance of ingredients cultivated within hours of harvest at our valley farmstead.
+>>>>>>> 1dbc971 (Initial commit)
             </p>
 
             <!-- Accolades List -->

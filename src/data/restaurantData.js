@@ -2,11 +2,19 @@ export const RESTAURANT_INFO = {
   name: 'Savoria',
   tagline: 'Artisanal Bistro & Fine Dining Sanctuary',
   foundedYear: 2012,
+<<<<<<< HEAD
   address: '428 Heritage Boulevard, Culinary District, Metropolis',
   phone: '+1 (555) 234-7890',
   reservationPhone: '+1 (555) 234-7899',
   email: 'concierge@savoriabistro.com',
   cateringEmail: 'events@savoriabistro.com',
+=======
+  address: '428 Heritage Street, Srilanka',
+  phone: '+11 234-7890',
+  reservationPhone: '+11 234-7899',
+  email: 'concierge@savorio.com',
+  cateringEmail: 'events@savorio.com',
+>>>>>>> 1dbc971 (Initial commit)
   hours: [
     { days: 'Monday – Thursday', lunch: '11:30 AM – 2:30 PM', dinner: '5:00 PM – 10:00 PM' },
     { days: 'Friday – Saturday', lunch: '11:30 AM – 3:00 PM', dinner: '5:00 PM – 11:30 PM' },
@@ -23,12 +31,21 @@ export const RESTAURANT_INFO = {
 
 export const CHEF_DATA = {
   headChef: {
+<<<<<<< HEAD
     name: 'Antoine Laurent',
     title: 'Executive Chef & Co-Founder',
     experience: '22 Years of Haute Cuisine',
     origin: 'Lyon, France',
     image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=80',
     bio: 'Born in Lyon, the gastronomic capital of France, Chef Antoine trained under multiple Michelin-starred masters at L’Auberge du Pont de Collonges and Le Meurice. In 2012, he relocated to establish Savoria, uniting classical French precision with contemporary farm-to-table culinary innovation.',
+=======
+    name: 'Silva',
+    title: 'Executive Chef & Co-Founder',
+    experience: '22 Years',
+    origin: 'Colombo, Srilanka',
+    image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=80',
+    bio: 'Born in Colombo, the gastronomic capital of Srilanka, Chef silva trained under multiple Michelin-starred masters at L’Auberge du Pont de ColFrenlonges and Le Meurice. In 2012, he relocated to establish Savoria, uniting classical ch precision with contemporary farm-to-table culinary innovation.',
+>>>>>>> 1dbc971 (Initial commit)
     quote: 'Cooking is the alchemy of memory and reverence for the soil. Every plate must tell the story of the artisans who cultivated its ingredients.',
     accolades: [
       'James Beard Award Nominee — Best Chef (2021, 2024)',
@@ -39,23 +56,41 @@ export const CHEF_DATA = {
   },
   team: [
     {
+<<<<<<< HEAD
       name: 'Éléonore Vance',
       role: 'Master Pastry Chef',
       origin: 'Bordeaux, France',
+=======
+      name: 'Tharaka',
+      role: 'Master Pastry Chef',
+      origin: 'Gampaha,Srilanka',
+>>>>>>> 1dbc971 (Initial commit)
       image: 'https://images.unsplash.com/photo-1581299894007-aaa50297cf16?auto=format&fit=crop&w=700&q=80',
       description: 'Grand Diplôme from Le Cordon Bleu Paris. Éléonore reimagines classical patisserie with floral infusions and single-estate chocolates.'
     },
     {
+<<<<<<< HEAD
       name: 'Mateo Rossi',
       role: 'Head Sommelier & Beverage Director',
       origin: 'Tuscany, Italy',
+=======
+      name: 'Tharushi',
+      role: 'Head Sommelier & Beverage Director',
+      origin: 'Homagame,Srilank',
+>>>>>>> 1dbc971 (Initial commit)
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80',
       description: 'Master Court of Sommeliers certified. Mateo curates our subterranean 1,400-bottle cellar featuring biodynamic and rare vintage vintages.'
     },
     {
+<<<<<<< HEAD
       name: 'Kaito Tanaka',
       role: 'Chef de Cuisine',
       origin: 'Kyoto, Japan',
+=======
+      name: 'Sadun',
+      role: 'Chef de Cuisine',
+      origin: 'Gampaha,Srilank',
+>>>>>>> 1dbc971 (Initial commit)
       image: 'https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=700&q=80',
       description: 'Bringing pristine knife technique and umami balance from Kaiseki kitchens, Kaito oversees daily kitchen operations and seafood mastery.'
     }
@@ -64,17 +99,29 @@ export const CHEF_DATA = {
     {
       year: '2012',
       title: 'The Seed is Planted',
+<<<<<<< HEAD
       description: 'Chef Antoine and his partner founded Savoria as an intimate 12-table bistro dedicated to showcasing hyper-local seasonal ingredients.'
+=======
+      description: 'Chef silva and his partner founded Savoria as an intimate 12-table to showcasing hyper-local seasonal ingredients.'
+>>>>>>> 1dbc971 (Initial commit)
     },
     {
       year: '2015',
       title: 'First Major Recognition',
+<<<<<<< HEAD
       description: 'Named "Best New Restaurant of the Decade" by Epicurean Magazine, sparking reservations weeks in advance.'
+=======
+      description: 'Named "Best New Restaurant of the Decade" by  Magazine, sparking reservations weeks in advance.'
+>>>>>>> 1dbc971 (Initial commit)
     },
     {
       year: '2018',
       title: 'Direct Farm Partnership',
+<<<<<<< HEAD
       description: 'Established the 15-acre Savoria Bio-Farm in the surrounding valley, yielding heirloom vegetables, stone fruits, and edible botanicals exclusively for our guests.'
+=======
+      description: 'Established the 15-acre Savoria Farm in the surrounding valley, yielding heirloom vegetables, stone fruits, and edible exclusively for our guests.'
+>>>>>>> 1dbc971 (Initial commit)
     },
     {
       year: '2021',
@@ -92,7 +139,11 @@ export const CHEF_DATA = {
 export const FOOD_ITEMS = [
   {
     id: 'food-1',
+<<<<<<< HEAD
     name: 'Seared Hokkaido Scallops with Saffron Cream',
+=======
+    name: 'Food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'starters',
     price: 24,
     shortDescription: 'Pan-seared jumbo diver scallops atop saffron emulsion with crispy serrano ham and pea tendrils.',
@@ -118,7 +169,11 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-2',
+<<<<<<< HEAD
     name: 'Artisanal Burrata di Puglia',
+=======
+    name: 'food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'starters',
     price: 19,
     shortDescription: 'Creamy heirloom burrata with roasted mission figs, aged Modena balsamic, and grilled sourdough.',
@@ -143,7 +198,11 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-3',
+<<<<<<< HEAD
     name: 'Prime Black Angus Filet Mignon',
+=======
+    name: 'food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'mains',
     price: 48,
     shortDescription: 'Grass-fed center-cut tenderloin with pomme purée, charred broccolini, and black truffle demi-glace.',
@@ -169,7 +228,11 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-4',
+<<<<<<< HEAD
     name: 'Chilean Sea Bass en Papillote',
+=======
+    name: 'food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'mains',
     price: 44,
     shortDescription: 'Wild sea bass baked with lemongrass, fennel confit, baby bok choy, and dashi citrus broth.',
@@ -194,7 +257,11 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-5',
+<<<<<<< HEAD
     name: 'Handcrafted Truffle & Ricotta Ravioli',
+=======
+    name: 'food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'pasta',
     price: 32,
     shortDescription: 'Fresh egg pasta pockets filled with buffalo ricotta, sage brown butter, and shaved Norcia black truffles.',
@@ -219,7 +286,11 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-6',
+<<<<<<< HEAD
     name: 'Wild Mushroom & Saffron Risotto',
+=======
+    name: 'food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'pasta',
     price: 29,
     shortDescription: 'Acquerello carnaroli rice simmered with chanterelles, porcini, Spanish saffron, and mascarpone.',
@@ -244,11 +315,19 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-7',
+<<<<<<< HEAD
     name: 'Valrhona Dark Chocolate Lava Tart',
     category: 'desserts',
     price: 16,
     shortDescription: 'Warm 72% Guanaja molten core with Madagascar vanilla bean gelato and gold leaf garnish.',
     longDescription: 'Single-origin French Valrhona chocolate sculpted in a crisp sablé crust. Breaks open to reveal a cascading molten ganache, paired with hand-churned vanilla bean ice cream and tart raspberry reduction.',
+=======
+    name: 'food',
+    category: 'desserts',
+    price: 16,
+    shortDescription: 'Warm 72% Guanaja molten core with Madagascar vanilla bean gelato and gold leaf garnish.',
+    longDescription: 'Single-origin Srilanka chocolate sculpted in a crisp sablé crust. Breaks open to reveal a cascading molten ganache, paired with hand-churned vanilla bean ice cream and tart raspberry reduction.',
+>>>>>>> 1dbc971 (Initial commit)
     image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80',
     rating: 5.0,
     reviewCount: 310,
@@ -269,11 +348,19 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-8',
+<<<<<<< HEAD
     name: 'Bourbon Vanilla Bean Crème Brûlée',
     category: 'desserts',
     price: 14,
     shortDescription: 'Silky baked custard infused with Tahitian vanilla beans under an amber torched caramel crust.',
     longDescription: 'Traditional French egg custard enriched with heavy cream and flecks of whole Tahitian vanilla bean pods. Torched to order for an audible, glass-like sugar crackle, served with seasonal blackberries.',
+=======
+    name: 'food',
+    category: 'desserts',
+    price: 14,
+    shortDescription: 'Silky baked custard infused with Tahitian vanilla beans under an amber torched caramel crust.',
+    longDescription: 'Traditional Srilanka egg custard enriched with heavy cream and flecks of whole Tahitian vanilla bean pods. Torched to order for an audible, glass-like sugar crackle, served with seasonal blackberries.',
+>>>>>>> 1dbc971 (Initial commit)
     image: 'https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?auto=format&fit=crop&w=900&q=80',
     rating: 4.8,
     reviewCount: 165,
@@ -294,7 +381,11 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-9',
+<<<<<<< HEAD
     name: 'Smoked Rosemary Fig Elixir',
+=======
+    name: 'food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'beverages',
     price: 13,
     shortDescription: 'Charred mission fig reduction, clarified apple, smoked rosemary sprig, and sparkling botanicals.',
@@ -319,11 +410,19 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-10',
+<<<<<<< HEAD
     name: 'Blood Orange Hibiscus Spritz',
     category: 'beverages',
     price: 12,
     shortDescription: 'Sicilian blood orange juice, steeped wild hibiscus petals, elderflower, and bubbling soda.',
     longDescription: 'Pressed Sicilian blood oranges married with slow-steeped Egyptian hibiscus flowers and French elderflower essence. Vibrant crimson hue, effervescent, and refreshing with crushed mint.',
+=======
+    name: 'food',
+    category: 'beverages',
+    price: 12,
+    shortDescription: 'Sicilian blood orange juice, steeped wild hibiscus petals, elderflower, and bubbling soda.',
+    longDescription: 'Pressed Sicilian blood oranges married with slow-steeped Egyptian hibiscus flowers and Srilanka elderflower essence. Vibrant crimson hue, effervescent, and refreshing with crushed mint.',
+>>>>>>> 1dbc971 (Initial commit)
     image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80',
     rating: 4.7,
     reviewCount: 92,
@@ -344,7 +443,11 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-11',
+<<<<<<< HEAD
     name: 'Spicy Calabrian Chili Tiger Prawns',
+=======
+    name: 'food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'starters',
     price: 26,
     shortDescription: 'Wood-fired wild prawns in garlic-infused Calabrian chili oil with grilled sea salt focaccia.',
@@ -369,7 +472,11 @@ export const FOOD_ITEMS = [
   },
   {
     id: 'food-12',
+<<<<<<< HEAD
     name: 'Pan-Roasted Duck Breast with Cherry Port Glaze',
+=======
+    name: 'food',
+>>>>>>> 1dbc971 (Initial commit)
     category: 'mains',
     price: 42,
     shortDescription: 'Hudson Valley duck breast with parsnip silk, glazed baby heirloom carrots, and spiced cherry port jus.',
@@ -396,18 +503,32 @@ export const FOOD_ITEMS = [
 
 export const TESTIMONIALS = [
   {
+<<<<<<< HEAD
     quote: "Savoria is a rare beacon of gastronomic authenticity. Chef Antoine’s duck breast and scallop creations exist in a realm of their own.",
     author: "Jonathan Gold Award Critic",
+=======
+    quote: "Savoria is a rare beacon of gastronomic authenticity. Chef silva’s duck breast and scallop creations exist in a realm of their own.",
+    author: "John",
+>>>>>>> 1dbc971 (Initial commit)
     outlet: "The Metropolitan Gourmet"
   },
   {
     quote: "From the seamless online ordering to their candlelit private alcoves, Savoria elevates every single touchpoint into pure luxury.",
+<<<<<<< HEAD
     author: "Clara Hemingway",
     outlet: "Epicure & Travel Magazine"
   },
   {
     quote: "A masterclass in sustainable culinary art. The flavors are vivid, unmasked, and deeply evocative of the French countryside.",
     author: "Marcello Vivanti",
+=======
+    author: "Jane",
+    outlet: "Epicure & Travel Magazine"
+  },
+  {
+    quote: "A masterclass in sustainable culinary art. The flavors are vivid, unmasked, and deeply evocative of the Srilanka countryside.",
+    author: "Some Guy",
+>>>>>>> 1dbc971 (Initial commit)
     outlet: "International Dining Review"
   }
 ];
