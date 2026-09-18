@@ -6,10 +6,40 @@ const USER_KEY = 'savoria_user';
 const ORDERS_KEY = 'savoria_orders';
 const FAVORITES_KEY = 'savoria_favorites';
 
+// Determine current page from window.location
+export function detectPageFromUrl() {
+  if (typeof window === 'undefined') return 'home';
+  const path = window.location.pathname.toLowerCase();
+  const searchParams = new URLSearchParams(window.location.search);
+  const pageParam = searchParams.get('page');
+  const foodIdParam = searchParams.get('id');
+
+  if (foodIdParam) {
+    state.selectedFoodId = foodIdParam;
+  }
+
+  if (pageParam) {
+    return pageParam;
+  }
+
+  if (typeof document !== 'undefined' && document.body && document.body.dataset.page) {
+    return document.body.dataset.page;
+  }
+
+  if (path.includes('about.html') || path.endsWith('/about')) return 'about';
+  if (path.includes('contact.html') || path.endsWith('/contact')) return 'contact';
+  if (path.includes('menu.html') || path.endsWith('/menu')) return 'menu';
+  if (path.includes('services.html') || path.endsWith('/services')) return 'services';
+  if (path.includes('login.html') || path.includes('auth.html') || path.endsWith('/login') || path.endsWith('/auth')) return 'auth';
+  if (path.includes('food-detail.html') || path.endsWith('/food-detail')) return 'food-detail';
+  
+  return 'home';
+}
+
 // Default initial state
 export const state = {
-  currentPage: 'home', // 'home' | 'menu' | 'food-detail' | 'about' | 'services' | 'contact' | 'auth'
-  selectedFoodId: 'food-1',
+  currentPage: detectPageFromUrl(), // 'home' | 'menu' | 'food-detail' | 'about' | 'services' | 'contact' | 'auth'
+  selectedFoodId: new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '').get('id') || 'food-1',
   menuFilter: 'all',
   menuDietary: 'all',
   menuSearch: '',
@@ -38,14 +68,7 @@ export const state = {
   // UI states
   isCartOpen: false,
   isCheckoutOpen: false,
-  isReservationOpen: false,
-  isMobileMenuOpen: false,
-  reservationData: {
-    guests: '2 Guests',
-    date: new Date().toISOString().split('T')[0],
-    time: '7:00 PM',
-    sanctuary: 'Main Dining Hall'
-  }
+  isMobileMenuOpen: false
 };
 
 function loadFromStorage(key, fallback) {
@@ -88,8 +111,35 @@ export function navigateTo(page, foodId = null) {
     state.selectedFoodId = foodId;
   }
   state.isMobileMenuOpen = false;
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  renderApp();
+
+  let targetUrl = 'index.html';
+  if (page === 'home') targetUrl = 'index.html';
+  else if (page === 'about') targetUrl = 'about.html';
+  else if (page === 'contact') targetUrl = 'contact.html';
+  else if (page === 'menu') targetUrl = 'menu.html';
+  else if (page === 'services') targetUrl = 'services.html';
+  else if (page === 'auth' || page === 'login') targetUrl = 'login.html';
+  else if (page === 'food-detail') targetUrl = `food-detail.html${foodId ? `?id=${foodId}` : (state.selectedFoodId ? `?id=${state.selectedFoodId}` : '')}`;
+
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname.toLowerCase() : '';
+  const cleanTarget = targetUrl.split('?')[0];
+
+  // If we are already on this HTML page
+  const isSamePage = currentPath.endsWith(cleanTarget) || (cleanTarget === 'index.html' && (currentPath === '/' || currentPath.endsWith('/')));
+
+  if (isSamePage) {
+    if (page === 'food-detail' && foodId) {
+      const currentId = new URLSearchParams(window.location.search).get('id');
+      if (currentId !== foodId) {
+        window.location.href = targetUrl;
+        return;
+      }
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    renderApp();
+  } else {
+    window.location.href = targetUrl;
+  }
 }
 
 // Global render trigger

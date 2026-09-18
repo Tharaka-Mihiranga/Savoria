@@ -27,13 +27,14 @@ export function renderServicesPage() {
             <h2 class="font-serif text-3xl font-bold text-[#2C2724]">White-Glove Delivery Service</h2>
             <p class="text-xs text-stone-500 mt-1">Enjoy Michelin-inspired culinary artistry from the comfort of your private residence.</p>
           </div>
-          <button 
+          <a 
+            href="menu.html"
             id="services-order-now-btn"
             class="px-8 py-3.5 rounded-xl bg-amber-800 hover:bg-amber-700 text-white text-xs font-semibold uppercase tracking-wider transition-all shadow-md flex items-center gap-2"
           >
             <span>Start Online Order</span>
             ${icon('arrow-right', 'w-4 h-4')}
-          </button>
+          </a>
         </div>
 
         <!-- 4-STEP WORKFLOW -->
@@ -154,9 +155,9 @@ export function renderServicesPage() {
               </p>
               <div class="text-xs font-semibold text-amber-900">Starting at $180 / guest</div>
             </div>
-            <button class="catering-inquire-btn w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 rounded-xl text-xs font-semibold transition-colors">
+            <a href="contact.html" class="catering-inquire-btn w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 rounded-xl text-xs font-semibold transition-colors block text-center">
               Inquire Private Chef
-            </button>
+            </a>
           </div>
 
           <div class="bg-white rounded-2xl p-6 border border-stone-200/90 shadow-xs flex flex-col justify-between space-y-4">
@@ -170,9 +171,9 @@ export function renderServicesPage() {
               </p>
               <div class="text-xs font-semibold text-amber-900">Custom tailored menus</div>
             </div>
-            <button class="catering-inquire-btn w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 rounded-xl text-xs font-semibold transition-colors">
+            <a href="contact.html" class="catering-inquire-btn w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 rounded-xl text-xs font-semibold transition-colors block text-center">
               Request Banquet Proposal
-            </button>
+            </a>
           </div>
 
           <div class="bg-white rounded-2xl p-6 border border-stone-200/90 shadow-xs flex flex-col justify-between space-y-4">
@@ -186,9 +187,9 @@ export function renderServicesPage() {
               </p>
               <div class="text-xs font-semibold text-amber-900">$120 / connoisseur</div>
             </div>
-            <button class="catering-inquire-btn w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 rounded-xl text-xs font-semibold transition-colors">
+            <a href="contact.html" class="catering-inquire-btn w-full py-2.5 bg-stone-100 hover:bg-stone-200 text-stone-800 rounded-xl text-xs font-semibold transition-colors block text-center">
               Reserve Cellar Tasting
-            </button>
+            </a>
           </div>
 
         </div>

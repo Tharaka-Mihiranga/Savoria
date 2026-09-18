@@ -28,13 +28,14 @@ export function renderFoodDetailPage() {
       
       <!-- Back Navigation & Breadcrumb -->
       <div class="flex items-center justify-between">
-        <button 
+        <a 
+          href="menu.html"
           id="back-to-menu-btn"
           class="inline-flex items-center gap-2 text-sm font-semibold text-stone-600 hover:text-amber-900 transition-colors group"
         >
           <span class="transform group-hover:-translate-x-1 transition-transform">←</span>
           <span>Back to Artisanal Menu</span>
-        </button>
+        </a>
 
         <div class="flex items-center gap-3">
           <button 
@@ -347,13 +348,14 @@ export function renderFoodDetailPage() {
                 </div>
                 <p class="text-[11px] text-stone-500 line-clamp-2">${p.shortDescription}</p>
               </div>
-              <button 
+              <a 
+                href="food-detail.html?id=${p.id}"
                 data-action="view-food" 
                 data-id="${p.id}"
-                class="w-full py-2 bg-stone-100 hover:bg-stone-200 text-stone-800 rounded-lg text-xs font-semibold transition-colors text-center"
+                class="w-full py-2 bg-stone-100 hover:bg-stone-200 text-stone-800 rounded-lg text-xs font-semibold transition-colors text-center block"
               >
                 View Dish
-              </button>
+              </a>
             </div>
           `).join('')}
         </div>

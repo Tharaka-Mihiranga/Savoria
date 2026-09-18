@@ -5,11 +5,11 @@ import { RESTAURANT_INFO } from '../data/restaurantData.js';
 export function renderNavbar() {
   const { count } = getCartTotals();
   const navLinks = [
-    { id: 'home', label: 'Home' },
-    { id: 'menu', label: 'Menu' },
-    { id: 'about', label: 'About & Chef' },
-    { id: 'services', label: 'Services & Delivery' },
-    { id: 'contact', label: 'Contact & Hours' }
+    { id: 'home', url: 'index.html', label: 'Home' },
+    { id: 'menu', url: 'menu.html', label: 'Menu' },
+    { id: 'about', url: 'about.html', label: 'About & Chef' },
+    { id: 'services', url: 'services.html', label: 'Services & Delivery' },
+    { id: 'contact', url: 'contact.html', label: 'Contact & Hours' }
   ];
 
   return `
@@ -19,7 +19,7 @@ export function renderNavbar() {
         <div class="max-w-7xl mx-auto flex justify-between items-center">
           <div class="flex items-center gap-2">
             <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Now Welcoming Guests for Dinner & Table Reservations • Free White-Glove Delivery over $75</span>
+            <span>Artisanal Seasonal Dining • Free White-Glove Delivery over $75</span>
           </div>
           <div class="hidden md:flex items-center gap-6">
             <span class="flex items-center gap-1.5">${icon('phone', 'w-3.5 h-3.5 text-amber-400')} ${RESTAURANT_INFO.phone}</span>
@@ -34,7 +34,7 @@ export function renderNavbar() {
         <div class="flex items-center justify-between h-20">
           
           <!-- Logo & Brand -->
-          <button id="nav-brand-btn" class="flex items-center gap-3 text-left focus:outline-none group">
+          <a href="index.html" id="nav-brand-btn" class="flex items-center gap-3 text-left focus:outline-none group">
             <div class="w-11 h-11 rounded-full bg-[#2C2724] text-amber-200 flex items-center justify-center font-serif text-2xl font-bold shadow-md group-hover:bg-amber-900 transition-colors">
               S
             </div>
@@ -46,14 +46,15 @@ export function renderNavbar() {
                 Artisanal Bistro
               </span>
             </div>
-          </button>
+          </a>
 
           <!-- Desktop Links -->
           <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
             ${navLinks.map(link => {
               const isActive = state.currentPage === link.id;
               return `
-                <button 
+                <a 
+                  href="${link.url}"
                   data-page="${link.id}" 
                   class="nav-page-btn px-3 py-2 rounded-lg text-sm font-medium transition-all ${
                     isActive 
@@ -62,7 +63,7 @@ export function renderNavbar() {
                   }"
                 >
                   ${link.label}
-                </button>
+                </a>
               `;
             }).join('')}
           </nav>
@@ -70,17 +71,9 @@ export function renderNavbar() {
           <!-- Right Action Items -->
           <div class="flex items-center gap-2 sm:gap-3">
             
-            <!-- Reservation Button -->
-            <button 
-              id="open-reservation-btn"
-              class="hidden sm:flex items-center gap-2 px-3.5 py-2 text-xs uppercase tracking-wider font-semibold rounded-lg bg-stone-100 text-stone-800 border border-stone-300 hover:bg-stone-200 transition-colors"
-            >
-              ${icon('calendar', 'w-3.5 h-3.5 text-amber-800')}
-              <span>Reserve Table</span>
-            </button>
-
             <!-- User Auth / Profile Button -->
-            <button 
+            <a 
+              href="login.html"
               id="nav-auth-btn"
               class="flex items-center gap-2 p-2 sm:px-3 sm:py-2 text-xs font-medium rounded-lg text-stone-700 hover:bg-stone-100 transition-colors border border-transparent hover:border-stone-200"
               title="${state.currentUser ? 'My Account' : 'Sign In'}"
@@ -89,7 +82,7 @@ export function renderNavbar() {
               <span class="hidden sm:inline">
                 ${state.currentUser ? state.currentUser.name.split(' ')[0] : 'Sign In'}
               </span>
-            </button>
+            </a>
 
             <!-- Shopping Cart Button -->
             <button 
@@ -124,32 +117,27 @@ export function renderNavbar() {
             ${navLinks.map(link => {
               const isActive = state.currentPage === link.id;
               return `
-                <button 
+                <a 
+                  href="${link.url}"
                   data-page="${link.id}" 
                   class="nav-page-btn text-left px-4 py-2.5 rounded-lg text-base font-medium ${
                     isActive ? 'bg-amber-100 text-amber-950 font-semibold' : 'text-stone-700 hover:bg-stone-100'
                   }"
                 >
                   ${link.label}
-                </button>
+                </a>
               `;
             }).join('')}
           </div>
           <div class="pt-3 border-t border-stone-200 flex flex-col gap-2">
-            <button 
-              id="mobile-reservation-btn"
-              class="w-full flex items-center justify-center gap-2 py-2.5 text-sm font-semibold rounded-lg bg-amber-800 text-white"
-            >
-              ${icon('calendar', 'w-4 h-4')}
-              <span>Book Table Reservation</span>
-            </button>
-            <button 
+            <a 
+              href="login.html"
               id="mobile-auth-btn"
               class="w-full flex items-center justify-center gap-2 py-2.5 text-sm font-medium rounded-lg bg-stone-100 text-stone-800 border border-stone-300"
             >
               ${icon('user', 'w-4 h-4')}
               <span>${state.currentUser ? `Account (${state.currentUser.name})` : 'Login / Register'}</span>
-            </button>
+            </a>
           </div>
         </div>
       ` : ''}

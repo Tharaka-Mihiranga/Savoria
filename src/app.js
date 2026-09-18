@@ -11,7 +11,6 @@ import { renderContactPage, initContactEvents } from './components/contactPage.j
 import { renderAuthPage, initAuthEvents } from './components/authPage.js';
 import { renderCartDrawer, initCartEvents } from './components/cartDrawer.js';
 import { renderCheckoutModal, initCheckoutEvents } from './components/checkoutModal.js';
-import { renderReservationModal, initReservationEvents } from './components/reservationModal.js';
 import { showToast } from './components/toast.js';
 
 export function main() {
@@ -64,7 +63,6 @@ function render() {
     </div>
     ${renderCartDrawer()}
     ${renderCheckoutModal()}
-    ${renderReservationModal()}
   `;
 
   attachEventListeners();
@@ -94,24 +92,6 @@ function attachEventListeners() {
       render();
     };
   }
-
-  // Open Reservation
-  const resButtons = [
-    'open-reservation-btn',
-    'mobile-reservation-btn',
-    'hero-reserve-table-btn',
-    'cta-reserve-table-btn',
-    'footer-reserve-btn'
-  ];
-  resButtons.forEach(id => {
-    const btn = document.getElementById(id);
-    if (btn) {
-      btn.onclick = () => {
-        state.isReservationOpen = true;
-        render();
-      };
-    }
-  });
 
   // Open Auth
   const authButtons = ['nav-auth-btn', 'mobile-auth-btn'];
@@ -259,7 +239,6 @@ function attachEventListeners() {
   if (state.currentPage === 'auth') initAuthEvents();
   if (state.isCartOpen) initCartEvents();
   if (state.isCheckoutOpen) initCheckoutEvents();
-  if (state.isReservationOpen) initReservationEvents();
 }
 
 // Start application on DOM loaded or immediate

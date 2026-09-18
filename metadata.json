@@ -1,6 +1,6 @@
 {
   "name": "Savoria Artisanal Bistro & Restaurant",
-  "description": "Exquisite dining experience featuring interactive menus, chef history, online ordering, table reservations, and food details.",
+  "description": "Exquisite dining experience featuring interactive menus, chef history, white-glove online ordering, and food details.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

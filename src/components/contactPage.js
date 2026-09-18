@@ -14,11 +14,11 @@ export function renderContactPage() {
     },
     {
       q: 'Can the kitchen accommodate severe dietary allergies?',
-      a: 'Absolutely. Chef Antoine and his team craft dedicated gluten-free, dairy-free, vegetarian, and vegan variations for almost every course. Please specify your allergy in the reservation notes.'
+      a: 'Absolutely. Chef Antoine and his team craft dedicated gluten-free, dairy-free, vegetarian, and vegan variations for almost every course. Please specify your allergy in the order notes or concierge message.'
     },
     {
-      q: 'How far in advance can table reservations be booked?',
-      a: 'Dining reservations are opened 60 days in advance at 9:00 AM on the first of each month. For private dining or parties over 8 guests, please reach out via our concierge form.'
+      q: 'How far in advance can private catering and banquets be booked?',
+      a: 'Private dining, executive banquets, and off-premise catering are booked up to 90 days in advance. Reach out via our concierge form to discuss date availability.'
     }
   ];
 
@@ -32,7 +32,7 @@ export function renderContactPage() {
         </div>
         <h1 class="font-serif text-4xl sm:text-5xl font-bold text-[#2C2724]">Contact & Dining Hours</h1>
         <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
-          We invite your inquiries regarding table reservations, bespoke catering, cellar tastings, and dietary accommodations.
+          We invite your inquiries regarding bespoke catering, private chef services, cellar tastings, and dietary accommodations.
         </p>
       </div>
 
@@ -96,7 +96,7 @@ export function renderContactPage() {
                   id="contact-topic"
                   class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-amber-800 text-sm bg-white"
                 >
-                  <option value="reservation">Table Reservation Inquiry</option>
+                  <option value="general">General Inquiries & Hospitality</option>
                   <option value="private-dining">Private Dining & Banquets</option>
                   <option value="catering">Off-Premise Bespoke Catering</option>
                   <option value="sommelier">Sommelier Cellar Experience</option>
@@ -148,7 +148,7 @@ export function renderContactPage() {
               <div class="flex items-start gap-3 p-3 bg-stone-50 rounded-xl">
                 ${icon('phone', 'w-5 h-5 text-amber-800 shrink-0 mt-0.5')}
                 <div>
-                  <strong class="block text-stone-900 font-semibold">Table Reservations Desk</strong>
+                  <strong class="block text-stone-900 font-semibold">Guest Concierge Desk</strong>
                   <span class="font-medium">${RESTAURANT_INFO.reservationPhone}</span>
                   <span class="block text-[11px] text-stone-500 mt-0.5">Direct Line: ${RESTAURANT_INFO.phone}</span>
                 </div>

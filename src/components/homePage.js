@@ -37,21 +37,23 @@ export function renderHomePage() {
 
           <!-- Call to Action Buttons -->
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <button 
+            <a 
+              href="menu.html"
               id="hero-explore-menu-btn"
               class="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-700 hover:bg-amber-600 text-white font-medium text-sm tracking-wider uppercase transition-all shadow-lg shadow-amber-900/40 flex items-center justify-center gap-2"
             >
               <span>Explore Seasonal Menu</span>
               ${icon('arrow-right', 'w-4 h-4')}
-            </button>
+            </a>
 
-            <button 
-              id="hero-reserve-table-btn"
+            <a 
+              href="services.html"
+              id="hero-services-btn"
               class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-stone-100 font-medium text-sm tracking-wider uppercase backdrop-blur-md border border-white/20 transition-all flex items-center justify-center gap-2"
             >
-              ${icon('calendar', 'w-4 h-4 text-amber-300')}
-              <span>Reserve Table Sanctuary</span>
-            </button>
+              ${icon('truck', 'w-4 h-4 text-amber-300')}
+              <span>White-Glove Services</span>
+            </a>
           </div>
 
           <!-- Quick Service Badge -->
@@ -104,13 +106,14 @@ export function renderHomePage() {
               Each dish reflects seasonal micro-harvests from our valley farm, cooked with deliberate temperature mastery and presented with artistic restraint.
             </p>
           </div>
-          <button 
+          <a 
+            href="menu.html"
             id="view-full-menu-btn"
             class="inline-flex items-center gap-2 text-sm font-semibold text-amber-900 hover:text-amber-700 transition-colors group"
           >
             <span>View Complete 12-Dish Menu</span>
             <span class="transform group-hover:translate-x-1 transition-transform">${icon('arrow-right', 'w-4 h-4')}</span>
-          </button>
+          </a>
         </div>
 
         <!-- Dishes Grid -->
@@ -175,13 +178,14 @@ export function renderHomePage() {
 
                   <!-- Actions -->
                   <div class="grid grid-cols-2 gap-2 pt-2">
-                    <button 
+                    <a 
+                      href="food-detail.html?id=${food.id}"
                       data-action="view-food" 
                       data-id="${food.id}"
-                      class="py-2.5 px-3 rounded-xl border border-stone-300 text-stone-700 text-xs font-semibold hover:bg-stone-50 hover:border-stone-400 transition-colors text-center"
+                      class="py-2.5 px-3 rounded-xl border border-stone-300 text-stone-700 text-xs font-semibold hover:bg-stone-50 hover:border-stone-400 transition-colors text-center flex items-center justify-center"
                     >
                       Food Details
-                    </button>
+                    </a>
                     <button 
                       data-action="quick-add" 
                       data-id="${food.id}"
@@ -247,13 +251,14 @@ export function renderHomePage() {
               </div>
 
               <div class="pt-4 flex flex-wrap gap-4">
-                <button 
+                <a 
+                  href="about.html"
                   id="home-chef-about-btn"
                   class="px-6 py-3 rounded-xl bg-amber-700 hover:bg-amber-600 text-white text-xs font-semibold tracking-wider uppercase transition-colors flex items-center gap-2"
                 >
                   <span>Explore 12-Year History & Culinary Team</span>
                   ${icon('arrow-right', 'w-3.5 h-3.5')}
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -287,33 +292,35 @@ export function renderHomePage() {
         </div>
       </section>
 
-      <!-- ORDER ONLINE & TABLE RESERVATION BANNER -->
+      <!-- ORDER ONLINE & DELIVERY BANNER -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-gradient-to-r from-stone-900 via-stone-800 to-amber-950 text-white rounded-3xl p-8 sm:p-14 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
           <div class="space-y-4 max-w-2xl text-center lg:text-left">
             <span class="inline-block px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold uppercase tracking-wider">
-              Fine Dining At Home or In Person
+              Artisanal Gastronomy At Home
             </span>
             <h2 class="font-serif text-3xl sm:text-4xl font-bold">
               Immerse Yourself in the Savoria Gastronomic Experience
             </h2>
             <p class="text-sm text-stone-300">
-              Select between our intimate table sanctuary reservations or our heated white-glove packaging delivered right to your dining room.
+              Experience culinary excellence delivered with heated white-glove thermal packaging or bespoke private chef catering for your special events.
             </p>
           </div>
           <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto shrink-0">
-            <button 
-              id="cta-reserve-table-btn"
-              class="px-8 py-4 bg-amber-700 hover:bg-amber-600 text-white rounded-xl text-xs font-semibold tracking-wider uppercase transition-colors text-center shadow-lg"
+            <a 
+              href="menu.html"
+              id="cta-menu-btn"
+              class="px-8 py-4 bg-amber-700 hover:bg-amber-600 text-white rounded-xl text-xs font-semibold tracking-wider uppercase transition-colors text-center shadow-lg flex items-center justify-center gap-2"
             >
-              Book Table Sanctuary
-            </button>
-            <button 
+              Explore Full Menu
+            </a>
+            <a 
+              href="services.html"
               id="cta-order-delivery-btn"
-              class="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-xl text-xs font-semibold tracking-wider uppercase transition-colors text-center backdrop-blur-md"
+              class="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-xl text-xs font-semibold tracking-wider uppercase transition-colors text-center backdrop-blur-md flex items-center justify-center"
             >
               Order Online Delivery
-            </button>
+            </a>
           </div>
         </div>
       </section>

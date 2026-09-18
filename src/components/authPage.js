@@ -24,7 +24,7 @@ export function renderAuthPage() {
           </h1>
           <p class="text-xs text-stone-500">
             ${authMode === 'login' 
-              ? 'Access your private orders, saved tasting favorites, and priority reservations.' 
+              ? 'Access your private orders, saved tasting favorites, and exclusive member privileges.' 
               : 'Join the Savoria Epicurean Guild for bespoke member rewards and cellar invites.'}
           </p>
         </div>
@@ -221,11 +221,13 @@ function renderMemberDashboard() {
             <div class="space-y-3">
               ${favItems.map(item => `
                 <div class="bg-white rounded-2xl p-3.5 border border-stone-200/90 flex items-center gap-3">
-                  <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-xl object-cover shrink-0" />
-                  <div class="flex-1 min-w-0">
+                  <a href="food-detail.html?id=${item.id}" class="shrink-0">
+                    <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-xl object-cover hover:opacity-90 transition-opacity" />
+                  </a>
+                  <a href="food-detail.html?id=${item.id}" class="flex-1 min-w-0 hover:text-amber-900 transition-colors">
                     <h4 class="font-serif text-sm font-bold text-stone-900 truncate">${item.name}</h4>
                     <span class="font-serif text-xs font-bold text-amber-900">$${item.price}</span>
-                  </div>
+                  </a>
                   <button 
                     data-action="quick-add" 
                     data-id="${item.id}"

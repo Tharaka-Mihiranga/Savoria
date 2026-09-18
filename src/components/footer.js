@@ -33,12 +33,12 @@ export function renderFooter() {
               Navigation
             </h4>
             <ul class="space-y-2 text-sm text-stone-400">
-              <li><button data-page="home" class="footer-nav-link hover:text-amber-300 transition-colors">Home Experience</button></li>
-              <li><button data-page="menu" class="footer-nav-link hover:text-amber-300 transition-colors">Artisanal Menu & Wine</button></li>
-              <li><button data-page="about" class="footer-nav-link hover:text-amber-300 transition-colors">Chef Antoine & History</button></li>
-              <li><button data-page="services" class="footer-nav-link hover:text-amber-300 transition-colors">White-Glove Delivery & Catering</button></li>
-              <li><button data-page="contact" class="footer-nav-link hover:text-amber-300 transition-colors">Concierge & Table Bookings</button></li>
-              <li><button data-page="auth" class="footer-nav-link hover:text-amber-300 transition-colors">Connoisseur Club Login</button></li>
+              <li><a href="index.html" class="footer-nav-link hover:text-amber-300 transition-colors">Home Experience</a></li>
+              <li><a href="menu.html" class="footer-nav-link hover:text-amber-300 transition-colors">Artisanal Menu & Wine</a></li>
+              <li><a href="about.html" class="footer-nav-link hover:text-amber-300 transition-colors">Chef Antoine & History</a></li>
+              <li><a href="services.html" class="footer-nav-link hover:text-amber-300 transition-colors">White-Glove Delivery & Catering</a></li>
+              <li><a href="contact.html" class="footer-nav-link hover:text-amber-300 transition-colors">Concierge & Inquiries</a></li>
+              <li><a href="login.html" class="footer-nav-link hover:text-amber-300 transition-colors">Connoisseur Club Login</a></li>
             </ul>
           </div>
 
@@ -76,16 +76,16 @@ export function renderFooter() {
               </li>
               <li class="flex items-center gap-2.5">
                 ${icon('phone', 'w-4 h-4 text-amber-400 shrink-0')}
-                <span>Reservations: ${RESTAURANT_INFO.reservationPhone}</span>
+                <span>Concierge: ${RESTAURANT_INFO.reservationPhone}</span>
               </li>
               <li class="flex items-center gap-2.5">
                 ${icon('mail', 'w-4 h-4 text-amber-400 shrink-0')}
                 <span>${RESTAURANT_INFO.email}</span>
               </li>
               <li class="pt-2">
-                <button id="footer-reserve-btn" class="w-full py-2 px-3 bg-amber-900/80 hover:bg-amber-800 text-amber-100 rounded-lg text-xs font-semibold tracking-wider uppercase transition-colors border border-amber-700/50">
-                  Book A Dining Sanctuary
-                </button>
+                <a href="menu.html" class="block w-full py-2 px-3 bg-amber-900/80 hover:bg-amber-800 text-amber-100 rounded-lg text-xs font-semibold tracking-wider uppercase transition-colors border border-amber-700/50 text-center">
+                  Order Artisanal Delivery
+                </a>
               </li>
             </ul>
           </div>

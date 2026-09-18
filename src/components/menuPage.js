@@ -185,7 +185,7 @@ export function renderMenuPage() {
               <div class="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 
                 <!-- Food Image & Badges -->
-                <div class="relative h-60 overflow-hidden bg-stone-100 cursor-pointer" data-action="view-food" data-id="${food.id}">
+                <a href="food-detail.html?id=${food.id}" class="relative h-60 overflow-hidden bg-stone-100 cursor-pointer block" data-action="view-food" data-id="${food.id}">
                   <img 
                     src="${food.image}" 
                     alt="${food.name}"
@@ -205,25 +205,27 @@ export function renderMenuPage() {
                     data-id="${food.id}"
                     class="absolute top-3 right-3 p-2 rounded-full bg-white/90 hover:bg-white text-stone-700 hover:text-rose-600 transition-colors shadow-md z-10"
                     title="${isFav ? 'Remove favorite' : 'Add favorite'}"
+                    onclick="event.preventDefault(); event.stopPropagation();"
                   >
                     ${isFav ? icon('heart-filled', 'w-4 h-4 text-rose-600') : icon('heart', 'w-4 h-4')}
                   </button>
                   <div class="absolute bottom-3 right-3 px-2.5 py-0.5 rounded-md bg-black/75 text-white text-[11px] font-semibold backdrop-blur-sm pointer-events-none">
                     ${food.prepTime}
                   </div>
-                </div>
+                </a>
 
                 <!-- Food Information -->
                 <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
                   <div>
                     <div class="flex justify-between items-start gap-2 mb-1.5">
-                      <h3 
+                      <a 
+                        href="food-detail.html?id=${food.id}"
                         data-action="view-food" 
                         data-id="${food.id}"
                         class="font-serif text-lg font-bold text-stone-900 group-hover:text-amber-900 transition-colors line-clamp-1 cursor-pointer"
                       >
                         ${food.name}
-                      </h3>
+                      </a>
                       <span class="font-serif text-xl font-bold text-amber-900 shrink-0">
                         $${food.price}
                       </span>
@@ -255,13 +257,14 @@ export function renderMenuPage() {
 
                   <!-- Action Buttons -->
                   <div class="grid grid-cols-2 gap-2 pt-1">
-                    <button 
+                    <a 
+                      href="food-detail.html?id=${food.id}"
                       data-action="view-food" 
                       data-id="${food.id}"
-                      class="py-2 px-3 rounded-xl border border-stone-300 text-stone-700 text-xs font-semibold hover:bg-stone-50 transition-colors text-center"
+                      class="py-2 px-3 rounded-xl border border-stone-300 text-stone-700 text-xs font-semibold hover:bg-stone-50 transition-colors text-center flex items-center justify-center"
                     >
                       Food Details
-                    </button>
+                    </a>
                     <button 
                       data-action="quick-add" 
                       data-id="${food.id}"
